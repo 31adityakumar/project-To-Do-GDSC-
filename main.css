@@ -1,0 +1,161 @@
+:root {
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+.greeting .title {
+    display: flex;
+}
+
+.greeting .title input {
+    margin-left: 0.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+.greeting .title,
+.greeting .title input {
+    color: rgb(49, 49, 84);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.create-todo input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: rgb(220, 105, 40);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+}
+.create-todo input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgb(234, 64, 164);
+    box-shadow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.create-todo input[type="submit"]:hover {
+    color: aqua;
+    background-color: rgb(255, 91, 87);
+
+}
+
+table {
+    width: 80%;
+    margin: 20px;
+    border-collapse: separate;
+    border-spacing: 50px 10px;
+}
+
+td {
+    padding: 5px 5px;
+    color: rgb(255, 255, 225);
+    border: 1px solid rgba(0, 0, 0, 0.245);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(235, 120, 65, 0.75);
+    font-weight: 800;
+}
+td[onclick] {
+    background-color: rgb(255, 91, 87);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+}

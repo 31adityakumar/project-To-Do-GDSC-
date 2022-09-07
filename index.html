@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <nav id="navbar">
+        <div class="logo">
+            <img src="icon.png" alt="">
+        </div>
+    </nav>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                Hello, <input type="text" id="name" placeholder="Name" />
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>Make your TO-DO</h3>
+
+            <form>
+                <input type="text" placeholder="e.g. submit assignment 'abc' " required>
+                <input type="submit">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>To-Do List</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
